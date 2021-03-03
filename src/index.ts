@@ -16,13 +16,13 @@ const getDecimal = (value: number )=>{
     return decimal
 
 }
-export const  convertCurrency= ( value : number  ) =>{
+export const  convertCurrency= ( value : number | undefined  ) =>{
     let tr = require( "number-to-text/converters/tr")
 
     let config = {language:"tr",case : "titleCase"}
-    let decimal = getDecimal(value)
+    let decimal = getDecimal(value as number )
 
-    let integer  = value - (value % 1) 
+    let integer  = (value as number) - ( (value as number) % 1) 
    let txtInteger : string  = NumberToText.convertToText(integer,config) 
    let txtDecimal = ""
     if(decimal > 0){

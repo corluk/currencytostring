@@ -4,18 +4,19 @@
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-typescript": "^7.12.16",
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.27",
+    "@types/node": "^14.14.31",
     "jest": "^26.6.3",
     "typescript": "^4.1.5"
   },
   "name": "currency-to-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "babel.config.js",
   "dependencies": {
     "number-to-text": "^0.3.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://bitbucket.org/osmancorluk/number-to-text-impl#readme",
-  "description": "" ,
+  "description": "",
   "publishConfig": {
     "registry": "http://168.119.250.79:8081/repository/npm-private/"
   }
